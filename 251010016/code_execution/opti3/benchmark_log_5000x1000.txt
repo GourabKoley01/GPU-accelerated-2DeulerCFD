@@ -1,0 +1,57 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:1
+
+--- BENCHMARK MODE ACTIVE: Running 7 iterations ---
+
+Initializing grid with size: 5000x1000
+Grid: 5000×1000
+Scheme: MUSCL (GPU - cuda:1)
+Time stepping: EULER
+==================================================
+Module __main__ 1f71f91 load on device 'cuda:1' took 4.65 ms  (cached)
+Run 1/7 completed in 2.0634 seconds
+Run 2/7 completed in 2.0628 seconds
+Run 3/7 completed in 2.0632 seconds
+Run 4/7 completed in 2.0633 seconds
+Run 5/7 completed in 2.0629 seconds
+Run 6/7 completed in 2.0630 seconds
+Run 7/7 completed in 2.0633 seconds
+
+==================================================
+Discarding Run 1 (Warm-up): 2.0634s
+Best execution time (Runs 2-7): 2.0628 seconds
+Total Steps: 4733
+Achieved TFLOPS: 11.472154 TFLOPS
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_5000x1000.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_5000x1000.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.000358
+  Velocity: 0.000542
+  Pressure: 0.000330
+
+✓ Validation plot saved as 'validation_muscl_opti3_5000x1000.png'
+
+All plots generated successfully!

@@ -1,0 +1,616 @@
+=========================================
+ Profiling Grid: 80x10
+=========================================
+==PROF== Connected to process 26237 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_7c28f676_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_7c28f676_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_7c28f676_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 80x10
+Grid: 80×10
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ b31d32a load on device 'cuda:3' took 51.83 ms  (cached)
+Run 1/1 completed in 4.9500 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_80x10.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_80x10.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.150150
+  Velocity: 0.422050
+  Pressure: 0.163063
+
+✓ Validation plot saved as 'validation_muscl_opti3_80x10.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 26237
+[26237] python3.13@127.0.0.1
+  compute_fluxes_kernel_7c28f676_cuda_kernel_forward (5, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         0.42
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %         0.49
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         0.15
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_7c28f676_cuda_kernel_forward (5, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         0.43
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %         0.50
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         0.15
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_7c28f676_cuda_kernel_forward (5, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         0.42
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %         0.49
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         0.15
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
+=========================================
+ Profiling Grid: 200x100
+=========================================
+==PROF== Connected to process 26456 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_b0ed15f4_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_b0ed15f4_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_b0ed15f4_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 200x100
+Grid: 200×100
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ b3d7593 load on device 'cuda:3' took 51.71 ms  (cached)
+Run 1/1 completed in 4.8213 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_200x100.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_200x100.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.154717
+  Velocity: 0.433351
+  Pressure: 0.168052
+
+✓ Validation plot saved as 'validation_muscl_opti3_200x100.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 26456
+[26456] python3.13@127.0.0.1
+  compute_fluxes_kernel_b0ed15f4_cuda_kernel_forward (83, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         3.22
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %         8.49
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         3.08
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_b0ed15f4_cuda_kernel_forward (83, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         3.18
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %         8.38
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         3.04
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_b0ed15f4_cuda_kernel_forward (83, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         3.19
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %         8.53
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         3.09
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
+=========================================
+ Profiling Grid: 500x100
+=========================================
+==PROF== Connected to process 26672 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_2622ffde_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_2622ffde_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_2622ffde_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 500x100
+Grid: 500×100
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ 87f148d load on device 'cuda:3' took 5.37 ms  (cached)
+Run 1/1 completed in 1.7989 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_500x100.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_500x100.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.156857
+  Velocity: 0.437858
+  Pressure: 0.170037
+
+✓ Validation plot saved as 'validation_muscl_opti3_500x100.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 26672
+[26672] python3.13@127.0.0.1
+  compute_fluxes_kernel_2622ffde_cuda_kernel_forward (205, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         6.40
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        18.38
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         6.67
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_2622ffde_cuda_kernel_forward (205, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         6.12
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        17.80
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         6.46
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_2622ffde_cuda_kernel_forward (205, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %         6.34
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        18.46
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %         6.70
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
+=========================================
+ Profiling Grid: 1000x100
+=========================================
+==PROF== Connected to process 26857 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_876d080c_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_876d080c_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_876d080c_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 1000x100
+Grid: 1000×100
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ 5e576f8 load on device 'cuda:3' took 55.49 ms  (cached)
+Run 1/1 completed in 4.8926 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_1000x100.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_1000x100.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.157356
+  Velocity: 0.439360
+  Pressure: 0.170699
+
+✓ Validation plot saved as 'validation_muscl_opti3_1000x100.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 26857
+[26857] python3.13@127.0.0.1
+  compute_fluxes_kernel_876d080c_cuda_kernel_forward (408, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        10.70
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        31.35
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        11.39
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_876d080c_cuda_kernel_forward (408, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        10.02
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        30.82
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        11.19
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_876d080c_cuda_kernel_forward (408, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        10.23
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        30.60
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        11.11
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
+=========================================
+ Profiling Grid: 5000x100
+=========================================
+==PROF== Connected to process 27081 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_252e97bd_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_252e97bd_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_252e97bd_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 5000x100
+Grid: 5000×100
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ 45beaf4 load on device 'cuda:3' took 54.80 ms  (cached)
+Run 1/1 completed in 1.7891 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_5000x100.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_5000x100.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.158005
+  Velocity: 0.440934
+  Pressure: 0.171311
+
+✓ Validation plot saved as 'validation_muscl_opti3_5000x100.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 27081
+[27081] python3.13@127.0.0.1
+  compute_fluxes_kernel_252e97bd_cuda_kernel_forward (2033, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        20.96
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        69.34
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        25.19
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_252e97bd_cuda_kernel_forward (2033, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        22.36
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        68.78
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        24.99
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_252e97bd_cuda_kernel_forward (2033, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        20.96
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        68.79
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        24.99
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
+=========================================
+ Profiling Grid: 1000x1000
+=========================================
+==PROF== Connected to process 27296 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_fc5953cf_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_fc5953cf_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_fc5953cf_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 1000x1000
+Grid: 1000×1000
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ 49955f1 load on device 'cuda:3' took 42.27 ms  (cached)
+Run 1/1 completed in 1.7976 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_1000x1000.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_1000x1000.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.157356
+  Velocity: 0.439360
+  Pressure: 0.170699
+
+✓ Validation plot saved as 'validation_muscl_opti3_1000x1000.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 27296
+[27296] python3.13@127.0.0.1
+  compute_fluxes_kernel_fc5953cf_cuda_kernel_forward (3938, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        24.83
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        76.22
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        28.31
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_fc5953cf_cuda_kernel_forward (3938, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        23.72
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        75.62
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        28.09
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_fc5953cf_cuda_kernel_forward (3938, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        24.76
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        76.42
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        28.39
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
+=========================================
+ Profiling Grid: 5000x1000
+=========================================
+==PROF== Connected to process 27508 (/SML_DISK_24TB/idc_606_data/miniconda3/bin/python3.13)
+==PROF== Profiling "compute_fluxes_kernel_f34dd195_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_f34dd195_cuda_kernel_forward": 0%....50%....100% - 10 passes
+==PROF== Profiling "compute_fluxes_kernel_f34dd195_cuda_kernel_forward": 0%....50%....100% - 10 passes
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:3
+
+--- PROFILING MODE ACTIVE: Running 1 iteration only ---
+
+Initializing grid with size: 5000x1000
+Grid: 5000×1000
+Scheme: MUSCL (GPU - cuda:3)
+Time stepping: EULER
+==================================================
+Module __main__ 1f71f91 load on device 'cuda:3' took 2.73 ms  (cached)
+Run 1/1 completed in 2.1352 seconds
+
+==================================================
+Profiling complete.
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti3_5000x1000.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti3_5000x1000.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.158005
+  Velocity: 0.440934
+  Pressure: 0.171311
+
+✓ Validation plot saved as 'validation_muscl_opti3_5000x1000.png'
+
+All plots generated successfully!
+==PROF== Disconnected from process 27508
+[27508] python3.13@127.0.0.1
+  compute_fluxes_kernel_f34dd195_cuda_kernel_forward (19626, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        62.63
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        86.54
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        32.16
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_f34dd195_cuda_kernel_forward (19626, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        62.08
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        86.34
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        32.08
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+  compute_fluxes_kernel_f34dd195_cuda_kernel_forward (19626, 1, 1)x(256, 1, 1), Context 5, Stream 56, Device 3, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    Metric Name                                                                                  Metric Unit Metric Value
+    -------------------------------------------------------------------------------------------- ----------- ------------
+    dram__throughput.avg.pct_of_peak_sustained_elapsed                                                     %        61.10
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                                                       %        86.53
+    smsp__sass_thread_inst_executed_ops_fadd_fmul_ffma_pred_on.avg.pct_of_peak_sustained_elapsed           %        32.15
+    -------------------------------------------------------------------------------------------- ----------- ------------
+
+
