@@ -1,0 +1,1 @@
+to see the gpu performance live use command "watch -n 0.1 nvidia-smi"

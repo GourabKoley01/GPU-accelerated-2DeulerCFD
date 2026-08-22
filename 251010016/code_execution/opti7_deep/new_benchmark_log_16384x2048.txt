@@ -1,0 +1,54 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:0
+
+--- BENCHMARK MODE: 7 runs ---
+
+Grid: 16384x2048
+Grid: 16384×2048
+Scheme: MUSCL (GPU - cuda:0)
+Time stepping: RK3
+==================================================
+Module __main__ b230a24 load on device 'cuda:0' took 2.65 ms  (cached)
+Initial max speed: 1.183
+Fixed dt = 0.000013
+Estimated steps: 15509
+Module __main__ 8c1e7b7 load on device 'cuda:0' took 3.03 ms  (cached)
+Run 1/7 completed in 213.6998 s
+Run 2/7 completed in 153.8645 s
+Run 3/7 completed in 128.7965 s
+Run 4/7 completed in 126.7622 s
+Run 5/7 completed in 123.3426 s
+Run 6/7 completed in 121.0512 s
+Run 7/7 completed in 120.8835 s
+
+==================================================
+Discarding warm-up: 213.6998 s
+Best time (runs 2-7): 120.8835 s
+Total steps: 15511
+Achieved TFLOPS: 51.665885 TFLOPS
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+✓ final_results_MUSCL_opti7_16384x2048.png
+✓ midplane_profiles_MUSCL_opti7_16384x2048.png
+
+VALIDATION WITH EXACT SOD SOLUTION
+L1 errors at t=0.2:
+  Density:  0.000174
+  Velocity: 0.000187
+  Pressure: 0.000075
+✓ validation_muscl_opti7_16384x2048.png
+All plots generated.

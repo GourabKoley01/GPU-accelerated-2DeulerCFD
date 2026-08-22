@@ -1,0 +1,57 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:2
+
+--- BENCHMARK MODE ACTIVE: Running 7 iterations ---
+
+Initializing grid with size: 16384x2048
+Grid: 16384×2048
+Scheme: MUSCL (GPU - cuda:2)
+Time stepping: RK3
+==================================================
+Module __main__ d1b5f64 load on device 'cuda:2' took 1.04 ms  (cached)
+Run 1/7 completed in 368.0897 seconds
+Run 2/7 completed in 401.5648 seconds
+Run 3/7 completed in 411.9699 seconds
+Run 4/7 completed in 398.6851 seconds
+Run 5/7 completed in 398.7512 seconds
+Run 6/7 completed in 382.6868 seconds
+Run 7/7 completed in 402.9631 seconds
+
+==================================================
+Discarding Run 1 (Warm-up): 368.0897s
+Best execution time (Runs 2-7): 382.6868 seconds
+Total Steps: 15511
+Achieved TFLOPS (Actual Math Workload): 16.320275 TFLOPS
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti6_SoA_16384x2048.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti6_SoA_16384x2048.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.000174
+  Velocity: 0.000187
+  Pressure: 0.000075
+
+✓ Validation plot saved as 'validation_muscl_opti6_SoA_16384x2048.png'
+
+All plots generated successfully!

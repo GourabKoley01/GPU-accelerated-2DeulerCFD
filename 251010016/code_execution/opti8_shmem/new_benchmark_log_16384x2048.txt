@@ -1,0 +1,44 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:2
+
+--- BENCHMARK MODE: 7 runs ---
+
+Grid: 16384×2048
+Grid: 16384×2048
+Scheme: MUSCL (GPU - cuda:2)
+Time stepping: RK3
+==================================================
+Module __main__ 3235404 load on device 'cuda:2' took 33.44 ms  (error)
+Traceback (most recent call last):
+  File "/SML_DISK_24TB/idc_606_data/251010016/code_execution/opti8_shmem/FDM_WARP_test_opti8_deep_shmem.py", line 503, in <module>
+    wp.launch(compute_max_speed_kernel, dim=(Nx, Ny),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              inputs=[rho_n, rhou_n, rhov_n, E_n, max_speed_arr, gamma, EPS, NG, Nx, Ny],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              device=device)
+              ^^^^^^^^^^^^^^
+  File "/SML_DISK_24TB/idc_606_data/miniconda3/lib/python3.13/site-packages/warp/_src/context.py", line 7457, in launch
+    module_exec = kernel.module.load(device, block_dim)
+  File "/SML_DISK_24TB/idc_606_data/miniconda3/lib/python3.13/site-packages/warp/_src/context.py", line 3012, in load
+    raise e
+  File "/SML_DISK_24TB/idc_606_data/miniconda3/lib/python3.13/site-packages/warp/_src/context.py", line 3009, in load
+    compiled = self._compile(device, module_dir, output_name, output_arch)
+  File "/SML_DISK_24TB/idc_606_data/miniconda3/lib/python3.13/site-packages/warp/_src/context.py", line 2787, in _compile
+    Path(build_dir).mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/SML_DISK_24TB/idc_606_data/miniconda3/lib/python3.13/pathlib/_local.py", line 722, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: '/home/idc_606/.cache/warp/1.12.0/wp___main___3235404_p71854_t139772725630144'
