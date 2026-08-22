@@ -1,0 +1,37 @@
+Version	Problem	Fix	Gain	
+Base	Memory-heavy	—	Baseline	
+Opti1	Slow math operations	fast_math + inv_dx	Small gain	
+Opti2	Redundant memory loads	Reuse variables	Moderate gain	
+Opti3	Multiple kernels	Partial fusion	Noticeable gain	
+Opti4	Memory traffic	Kernel fusion	Big jump 🔥	
+Opti5	Increased compute	RK3	Accuracy ↑	
+Opti6	Memory layout	SoA	Bandwidth ↑	
+Opti7	Redundant memory use	Register reuse	Efficiency ↑	
+Opti8	Memory bottleneck	Extreme fusion	Peak performance 🔴	
+Opti8_shmem	Further optimization	Shared memory	Marginal gain	
+
+sumi_ji1999
+shahinbd
+Banglaboudi20
+bengalihousewife
+my_wife_chubby
+Pakhi0705
+chiru chiru
+Tanu1990
+SENSESEX
+Shirley Musk
+savannahWatsonx
+rogylis
+milklatina012
+kiriku
+Mirza22
+RinaKumari55
+sexy komal
+hotgujjumodal19
+sweetsex2001
+riyagueen
+desidelightx
+bengali_sexy
+kriti Bhabhi
+
+
