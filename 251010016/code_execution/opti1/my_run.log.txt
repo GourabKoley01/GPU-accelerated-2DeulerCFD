@@ -1,0 +1,37 @@
+nohup: ignoring input
+=====================================================
+ Starting Automated Warp CFD Benchmarks on RTX 6000  
+=====================================================
+-> Running Grid: 128 x 16...
+-> Logging to: new_benchmark_log_128x16.txt
+-> Finished Grid: 128 x 16
+-----------------------------------------------------
+-> Running Grid: 256 x 32...
+-> Logging to: new_benchmark_log_256x32.txt
+-> Finished Grid: 256 x 32
+-----------------------------------------------------
+-> Running Grid: 512 x 64...
+-> Logging to: new_benchmark_log_512x64.txt
+-> Finished Grid: 512 x 64
+-----------------------------------------------------
+-> Running Grid: 1024 x 128...
+-> Logging to: new_benchmark_log_1024x128.txt
+-> Finished Grid: 1024 x 128
+-----------------------------------------------------
+-> Running Grid: 2048 x 256...
+-> Logging to: new_benchmark_log_2048x256.txt
+-> Finished Grid: 2048 x 256
+-----------------------------------------------------
+-> Running Grid: 4096 x 512...
+-> Logging to: new_benchmark_log_4096x512.txt
+-> Finished Grid: 4096 x 512
+-----------------------------------------------------
+-> Running Grid: 8192 x 1024...
+-> Logging to: new_benchmark_log_8192x1024.txt
+-> Finished Grid: 8192 x 1024
+-----------------------------------------------------
+-> Running Grid: 16384 x 2048...
+-> Logging to: new_benchmark_log_16384x2048.txt
+-> Finished Grid: 16384 x 2048
+-----------------------------------------------------
+All benchmark runs completed successfully!

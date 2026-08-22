@@ -1,0 +1,108 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:1
+
+--- BENCHMARK MODE ACTIVE: Running 7 iterations ---
+
+Initializing grid with size: 1000x100
+Grid: 1000×100
+Scheme: MUSCL (GPU - cuda:1)
+Time stepping: EULER
+==================================================
+Module __main__ 46a5732 load on device 'cuda:1' took 1568.17 ms  (compiled)
+Initial max speed: 1.183
+Fixed dt = 0.000211
+Estimated steps needed: 947
+==================================================
+Run 1/7 completed in 0.0401 seconds
+Run 2/7 completed in 0.0398 seconds
+Run 3/7 completed in 0.0394 seconds
+Run 4/7 completed in 0.0393 seconds
+Run 5/7 completed in 0.0395 seconds
+Run 6/7 completed in 0.0394 seconds
+Step     20 | t=0.00423/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5494 | speed=22770.4 steps/s
+Step     40 | t=0.00845/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5488 | speed=12573.8 steps/s
+Step     60 | t=0.01268/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5482 | speed=11712.1 steps/s
+Step     80 | t=0.01690/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5476 | speed=11382.5 steps/s
+Step    100 | t=0.02113/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5470 | speed=11306.3 steps/s
+Step    120 | t=0.02535/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5463 | speed=11173.9 steps/s
+Step    140 | t=0.02958/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5457 | speed=11102.8 steps/s
+Step    160 | t=0.03381/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5451 | speed=11088.7 steps/s
+Step    180 | t=0.03803/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5445 | speed=11059.6 steps/s
+Step    200 | t=0.04226/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5439 | speed=11034.4 steps/s
+Step    220 | t=0.04648/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5433 | speed=11024.6 steps/s
+Step    240 | t=0.05071/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5427 | speed=10937.5 steps/s
+Step    260 | t=0.05493/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5420 | speed=10920.2 steps/s
+Step    280 | t=0.05916/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5414 | speed=10936.7 steps/s
+Step    300 | t=0.06339/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5408 | speed=10937.4 steps/s
+Step    320 | t=0.06761/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5402 | speed=10929.0 steps/s
+Step    340 | t=0.07184/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5396 | speed=10857.0 steps/s
+Step    360 | t=0.07606/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5390 | speed=10674.6 steps/s
+Step    380 | t=0.08029/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5383 | speed=10689.7 steps/s
+Step    400 | t=0.08452/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5377 | speed=10695.1 steps/s
+Step    420 | t=0.08874/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5371 | speed=10699.6 steps/s
+Step    440 | t=0.09297/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5365 | speed=10704.0 steps/s
+Step    460 | t=0.09719/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5359 | speed=10720.1 steps/s
+Step    480 | t=0.10142/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5353 | speed=10718.2 steps/s
+Step    500 | t=0.10564/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5347 | speed=10721.9 steps/s
+Step    520 | t=0.10987/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5340 | speed=10734.8 steps/s
+Step    540 | t=0.11410/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5334 | speed=10734.8 steps/s
+Step    560 | t=0.11832/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5328 | speed=10734.0 steps/s
+Step    580 | t=0.12255/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5322 | speed=10743.2 steps/s
+Step    600 | t=0.12677/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5316 | speed=10746.1 steps/s
+Step    620 | t=0.13100/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5310 | speed=10743.7 steps/s
+Step    640 | t=0.13523/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5304 | speed=10755.5 steps/s
+Step    660 | t=0.13945/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5297 | speed=10761.6 steps/s
+Step    680 | t=0.14368/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5291 | speed=10765.5 steps/s
+Step    700 | t=0.14790/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5285 | speed=10777.7 steps/s
+Step    720 | t=0.15213/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5279 | speed=10783.6 steps/s
+Step    740 | t=0.15635/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5273 | speed=10788.2 steps/s
+Step    760 | t=0.16058/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5267 | speed=10798.7 steps/s
+Step    780 | t=0.16480/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5260 | speed=10805.8 steps/s
+Step    800 | t=0.16903/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5254 | speed=10810.4 steps/s
+Step    820 | t=0.17326/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5248 | speed=10821.1 steps/s
+Step    840 | t=0.17748/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5242 | speed=10826.7 steps/s
+Step    860 | t=0.18171/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5236 | speed=10830.5 steps/s
+Step    880 | t=0.18593/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5230 | speed=10840.0 steps/s
+Step    900 | t=0.19016/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5224 | speed=10839.4 steps/s
+Step    920 | t=0.19438/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5217 | speed=10834.6 steps/s
+Step    940 | t=0.19861/0.2 | dt=0.000211 | CFL=0.250 | ρ=0.5625 | p=0.5211 | speed=10839.6 steps/s
+Run 7/7 completed in 0.0880 seconds
+
+==================================================
+Discarding Run 1 (Warm-up): 0.0401s
+Best execution time (Runs 2-7): 0.0393 seconds
+Total Steps: 947
+Achieved TFLOPS: 2.408999 TFLOPS
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti1_1000x100.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti1_1000x100.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.001017
+  Velocity: 0.001595
+  Pressure: 0.000793
+
+✓ Validation plot saved as 'validation.png'
+
+All plots generated successfully!

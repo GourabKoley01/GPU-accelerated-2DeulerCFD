@@ -1,0 +1,64 @@
+Warp 1.12.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:1"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:2"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+     "cuda:3"   : "NVIDIA RTX PRO 6000 Blackwell Workstation Edition" (95 GiB, sm_120, mempool enabled)
+   CUDA peer access:
+     Supported fully (all-directional)
+   Kernel cache:
+     /home/idc_606/.cache/warp/1.12.0
+Warp devices: ['cpu', 'cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+Current device: cuda:1
+
+--- BENCHMARK MODE ACTIVE: Running 7 iterations ---
+
+Initializing grid with size: 80x10
+Grid: 80×10
+Scheme: MUSCL (GPU - cuda:1)
+Time stepping: EULER
+==================================================
+Module __main__ b1ace44 load on device 'cuda:1' took 2590.92 ms  (compiled)
+Initial max speed: 1.183
+Fixed dt = 0.002641
+Estimated steps needed: 76
+==================================================
+Run 1/7 completed in 0.0034 seconds
+Run 2/7 completed in 0.0032 seconds
+Run 3/7 completed in 0.0032 seconds
+Run 4/7 completed in 0.0031 seconds
+Run 5/7 completed in 0.0031 seconds
+Run 6/7 completed in 0.0031 seconds
+Step     20 | t=0.05282/0.2 | dt=0.002641 | CFL=0.250 | ρ=0.5625 | p=0.5428 | speed=23730.1 steps/s
+Step     40 | t=0.10564/0.2 | dt=0.002641 | CFL=0.250 | ρ=0.5625 | p=0.5352 | speed=20580.5 steps/s
+Step     60 | t=0.15847/0.2 | dt=0.002641 | CFL=0.250 | ρ=0.5625 | p=0.5275 | speed=20600.7 steps/s
+Run 7/7 completed in 0.0037 seconds
+
+==================================================
+Discarding Run 1 (Warm-up): 0.0034s
+Best execution time (Runs 2-7): 0.0031 seconds
+Total Steps: 76
+Achieved TFLOPS: 0.019606 TFLOPS
+==================================================
+
+==================================================
+CREATING FINAL PLOTS
+==================================================
+
+✓ Final results plot saved as 'final_results_MUSCL_opti1_80x10.png'
+✓ Midplane profiles plot saved as 'midplane_profiles_MUSCL_opti1_80x10.png'
+
+==================================================
+VALIDATION WITH EXACT SOD SOLUTION
+==================================================
+
+L1 Errors at t=0.2:
+  Density:  0.006771
+  Velocity: 0.013081
+  Pressure: 0.005373
+
+✓ Validation plot saved as 'validation.png'
+
+All plots generated successfully!
