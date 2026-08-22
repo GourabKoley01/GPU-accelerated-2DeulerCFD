@@ -16,15 +16,15 @@ To develop a highly parallelized 2D compressible flow solver to minimize simulat
 * **Hardware Limits:** Active occupancy stabilizes at ~48%, matching the hardware limit (~50%) due to high register usage (~80 registers/thread).
 
 ### 📊 Performance & Scaling Results
-![Speedup Plot](results/Final_CPU_GPU_1x3_LogX_Magnitude.png)
+![CPU vs GPU comparison](results/Final_CPU_GPU_1x3_LogX_Magnitude.png)
 
 * **Absolute CPU Speedup:** Achieved an **86,439x speedup** over unoptimized Python CPU execution.
 * **Algorithmic Scaling:** Despite a 3x mathematical workload increase transitioning to RK3, deep memory optimization yielded a massive **2.31x raw speedup** over the naive GPU baseline.
 * **Massive Grid Simulation:** Successfully simulated a 33.5M-cell grid (16384x2048) in ~85.3 seconds.
 * **Sustained Compute Efficiency:** Reached ~77-78% SM throughput and sustained ~72-77 TFLOPS (~20-21% of theoretical FP32 peak) in a compute-dominant regime.
 
-![Speedup Plot](results/Master_Optimization_Dashboard.png)
+![Full comaprison](results/Master_Optimization_Dashboard.png)
 
 ### 🌪️ Flow Visualization
-![Speedup Plot](results/final_results_MUSCL_opti8_fixed_8192x1024.png)
-![Speedup Plot](results/validation_muscl_opti8_fixed_4096x512.png)
+![Results contour](results/final_results_MUSCL_opti8_fixed_8192x1024.png)
+![Validation results](results/validation_muscl_opti8_fixed_4096x512.png)
